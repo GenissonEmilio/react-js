@@ -1,15 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const url = 'https://placehold.co/600x400';
+
+  function sum(a, b) {
+    return a + b;
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Primeiro projeto em React
-        </p>
-      </header>
+      <p>Soma: {sum(1,2)}</p>
+      <img src={url} alt="Minha imagem" />
     </div>
   );
 }
