@@ -9,6 +9,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>teste</h1>
       <p>Soma: {sum(1,2)}</p>
       <img src={url} alt="Minha imagem" />
     </div>
