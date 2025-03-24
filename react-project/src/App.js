@@ -1,17 +1,18 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
-  const url = 'https://placehold.co/600x400';
-
-  function sum(a, b) {
-    return a + b;
-  }
+  const name = "Eduarda";
 
   return (
     <div className="App">
-      <h1>teste</h1>
-      <p>Soma: {sum(1,2)}</p>
-      <img src={url} alt="Minha imagem" />
+      <HelloWorld/>
+      <SayMyName name="Genisson" age="18" />
+      <SayMyName name="João" age="25" />
+      <SayMyName name={name} />
+      <Pessoa name="Genisson" age="18" profession="Desenvolvedor" image="https://placehold.co/400x400" />
     </div>
   );
 }
