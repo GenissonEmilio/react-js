@@ -1,18 +1,15 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld';
-import SayMyName from './components/SayMyName';
-import Pessoa from './components/Pessoa';
-import List from './components/List';
+import Evento from './components/Evento';
+import Form from './components/Form';
 
 function App() {
-  const name = "Genisson";
 
   return (
     <div className="App">
-      <HelloWorld />
-      <List />
-      <SayMyName name={name} />
-      <Pessoa name="Genisson" age="18" profession="Desenvolvedor" image="https://placehold.co/400x400" />
+      <h1>Testando Eventos</h1>
+      <Evento numero={228} />
+      <Evento numero={42} />
+      <Form />
     </div>
   );
 }
