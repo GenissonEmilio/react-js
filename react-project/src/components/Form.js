@@ -4,11 +4,11 @@ function Form() {
 
     function cadastrarUsuario(e) {
         e.preventDefault();
-        console.log(name);
-        console.log("Usuario cadastrado");
+        alert(`Nome: ${name}\nSenha: ${password}`);
     }
 
-    const [ name, setName ] = useState();
+    const [name, setName] = useState();
+    const [password, setPassword] = useState();
 
     return (
         <div>
@@ -16,12 +16,14 @@ function Form() {
             <form onSubmit={cadastrarUsuario}>
                 <div>
                     <label htmlFor="name">Nome:</label>
-                    <input type="text" id="name" name="name" placeholder="Digite o seu nome" />
+                    <input type="text" id="name" name="name" placeholder="Digite o seu nome" 
+                    onChange={(e) => setName(e.target.value)}
+                    />
                 </div>
                 <div>
                     <label htmlFor="password">Senha:</label>
                     <input type="password" placeholder="Digite sua senha" id="password" name="password" 
-                    onChange={(e) => setName(e.target.value)}
+                    onChange={(e) => setPassword(e.target.value)} 
                     />
                 </div>
                 <div>
