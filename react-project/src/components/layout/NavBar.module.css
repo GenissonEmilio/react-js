@@ -1,0 +1,11 @@
+.navegacao {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: lightblue;
+}
+
+.navegacao li {
+    padding-right: 10px;
+    background-color: #1646a44b;
+}
